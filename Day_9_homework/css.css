@@ -1,0 +1,176 @@
+body { 
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.Left-main{
+    display: inline-block;
+    flex-direction: column;
+    width: 300px;
+    margin: 0px;
+    border: 0px solid black;
+    border-radius: 0px;
+    background-color: rgb(16, 93, 182);
+}
+#avatar{
+    display: flex;
+    border: 2px solid black;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    justify-content: center;
+}
+#avatar img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    border-radius: 50%;
+}
+#contract--information-title{
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
+#contract--information-content .contract--information-content__content{
+    display: block;
+    margin: 10px;
+    color: white;
+}
+#education{
+    display: block;
+    color: white;
+}
+#education--profile--information-title{
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 25px;
+}
+.education--profile--content{
+    display: flex;
+    margin: 10px;
+    max-width: 200px;
+    overflow-wrap:break-word;
+    flex-direction: column;
+}
+#skill--IT--information-title{
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
+.skill--IT--content{
+    display: flex;
+    margin: 10px;
+    max-width: 200px;
+    overflow-wrap:break-word;
+    flex-direction: column;
+    color: white;
+}
+#skill--English--information-title{
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
+.skill--English--content{
+    display: flex;
+    margin: 10px;
+    max-width: 200px;
+    overflow-wrap:break-word;
+    flex-direction: column;
+    color: white;
+}
+ 
+
+
+
+.Right-main{
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    border: 0px solid black;
+    border-radius: 0px;
+}
+
+#Name-and-jobs{
+    display: block;
+    border: 0px solid black;
+    padding-top: 45px;
+    padding-left: 10px;
+}
+.Name-and-jobs--Fullname{
+    display: block;
+    border: 0px solid black;
+    font-size: 50px;
+}
+.Name-and-jobs--Jobs{
+    display: block;
+    border: 0px solid black;
+    font-size: 35px;
+}
+
+#Career-goals{
+    display: block;
+    border: 0px solid black;
+    padding-left: 0px;
+    margin-top: 30px;
+}
+#Career-goals--Information-title{
+    display: block;
+    border-bottom: 3px solid black;
+    margin: 10px;
+    font-size: 25px;
+}
+.Career-goals--Content{
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Experience{
+    display: block;
+    border: 0px solid black;
+    padding-left: 0px;
+}
+#Experience--Information-title{
+    display: block;
+    border-bottom: 3px solid black;
+    margin: 10px;
+    font-size: 25px;
+}
+.Experience--Content{
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#Other-skill{
+    display: block;
+    border: 0px solid black;
+    padding: 0px;
+    
+}
+#Other-skill--Information-title{
+    display: block;
+    border-bottom: 3px solid black;
+    margin: 10px;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+}
+.Other-skill--Content{
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+}
