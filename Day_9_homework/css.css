@@ -1,0 +1,68 @@
+body { 
+    display: flex;
+    border: 3px solid black;
+}
+
+.Left-main{
+    display: inline-block;
+    flex-direction: column;
+    width: auto;
+    margin: 25px;
+    border: 3px solid black;
+    background-color: aqua;
+}
+#avatar{
+    display: inline-block;
+    border: 3px solid black;
+    margin: 10px;
+    padding-right: 3px;
+}
+#avatar img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+#contract--information-title{
+    display: block;
+    border-bottom: 3px solid black;
+    margin: 10px;
+}
+#contract--information-content .contract--information-content__content{
+    display: block;
+    margin: 10px;
+}
+#education{
+    display: block;
+    border: 3px solid black;
+}
+#education--profile--information-title{
+    display: flex;
+    border-bottom: 3px solid black;
+    margin: 10px;
+}
+.education--profile--content{
+    display: flex;
+    margin: 10px;
+    max-width: 200px;
+    overflow-wrap:break-word;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Right-main{
+    display: block;
+    width: 50%;
+
+}
