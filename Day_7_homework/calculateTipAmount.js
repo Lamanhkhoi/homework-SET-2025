@@ -3,7 +3,7 @@ let billAmount = 200000;
 // Tip percentage
 let tipPercent = 10;
 // Calculate tip amount
-let tipAmount = ( billAmount * ( tipPercent / 100));
+let tipAmount = (billAmount * (ipPercent / 100));
 // Calculate total amount
 let totalAmount = tipAmount + billAmount;
 // Print results
