@@ -1,12 +1,12 @@
-let hours = 7.2;
+let minutes = 8000;
 const minutesPerHour = 60;
 const secondsPerMinute = 60;
 
-let totalMinutes = hours * minutesPerHour;
-let totalSeconds = totalMinutes * secondsPerMinute;
+let totalHours = minutes / minutesPerHour;
+let totalSeconds = minutes * secondsPerMinute;
 
-let hoursDisplay = Math.floor(hours);
-let remainingMinutes = (totalMinutes % minutesPerHour).toFixed(2);
+let hoursDisplay = Math.floor(totalHours);
+let remainingMinutes = (minutes % minutesPerHour).toFixed(2);
 let remainingSeconds = (totalSeconds % secondsPerMinute).toFixed(2);
 
 console.log("Time:" + hoursDisplay + ":" + remainingMinutes + ":" + remainingSeconds);
