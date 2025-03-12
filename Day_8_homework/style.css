@@ -2,6 +2,7 @@ div{
     display: inline-flex;
     border: 1px solid black;
 }
+
 #top-nav-bar .W3-bar{
     display: inline-flex;
 }
@@ -16,11 +17,11 @@ div{
     padding: 10px 0;
 }
   
-#pagetop {
+#page-top {
     padding: 10px;
 }
   
-#pagetop img {
+#page-top img {
     width: 150px; 
 }
 
@@ -60,13 +61,13 @@ nav .bar-item:hover {
     padding: 10px;
 }
   
-.right-section #Get-Certificate,
-.right-section #Register {
+.right-section #getCertificate,
+.right-section #register {
     margin-right: 15px;
     border-radius: 5px; 
 }
   
-.right-section .Sign-up, .right-section .Login {
+.right-section .sign-up, .right-section .Login {
     background-color: #28a745;
     padding: 10px;
     color: white;
@@ -75,58 +76,58 @@ nav .bar-item:hover {
     border-radius: 5px;
 }
   
-.right-section .Sign-up:hover, .right-section .Login:hover {
+.right-section .sign-up:hover, .right-section .login:hover {
     background-color: #218838; 
 }
-section .HTML{
+section .html{
   border-radius: 5px;
 }
 section {
   display: inline-block;
   background-color: #c9c0c0;
 }
-section .CSS{
+section .css{
   border-radius: 5px;
 }
-section .Javascript{
+section .javascript{
   border-radius: 5px;
 }
-section .SQL{
+section .sql{
   border-radius: 5px;
 }
-section .Python{
+section .python{
   border-radius: 5px;
 }
-section .Java{
+section .java{
   border-radius: 5px;
 }
-section .PHP{
+section .php{
   border-radius: 5px;
 }
-section .How-to{
+section .how-to{
   border-radius: 5px;
 }
-section .W3-CSS{
+section .w3-css{
   border-radius: 5px;
 }
-section .C{
+section .c{
   border-radius: 5px;
 }
-section .Bootstrap{
+section .bootstrap{
   border-radius: 5px;
 }
-section .React{
+section .react{
   border-radius: 5px;
 }
-section .mySQL{
+section .mysql{
   border-radius: 5px;
 }
-section .JQUERY{
+section .jquery{
   border-radius: 5px;
 }
-section .Excel{
+section .excel{
   border-radius: 5px;
 }
-section .XML{
+section .xml{
   border-radius: 5px;
 }
