@@ -4,7 +4,7 @@ body {
     border-radius: 10px;
 }
 
-.Left-main{
+.left-main{
     display: inline-block;
     flex-direction: column;
     width: 300px;
@@ -13,6 +13,7 @@ body {
     border-radius: 0px;
     background-color: rgb(16, 93, 182);
 }
+
 #avatar{
     display: flex;
     border: 2px solid black;
@@ -24,6 +25,7 @@ body {
     border-radius: 70%;
     justify-content: center;
 }
+
 #avatar img{
     display: flex;
     width: 100%;
@@ -31,58 +33,50 @@ body {
     justify-content: center;
     border-radius: 50%;
 }
-#contract--information-title{
+
+#contract__information-title{
     display: block;
     border-bottom: 3px solid rgb(255, 255, 255);
     margin: 10px;
     color: white;
     font-size: 25px;
 }
-#contract--information-content .contract--information-content__content{
+
+#contract__information-content .contract__information-content--content{
     display: block;
     margin: 10px;
     color: white;
 }
+
 #education{
     display: block;
     color: white;
 }
-#education--profile--information-title{
+
+#education__profile__information-title{
     display: block;
     border-bottom: 3px solid rgb(255, 255, 255);
     margin: 10px;
     font-size: 25px;
 }
-.education--profile--content{
+
+.education__profile__content{
     display: flex;
     margin: 10px;
     max-width: 200px;
     overflow-wrap:break-word;
     flex-direction: column;
 }
-#skill--IT--information-title{
+
+#skill__IT__information-title{
     display: block;
     border-bottom: 3px solid rgb(255, 255, 255);
     margin: 10px;
     color: white;
     font-size: 25px;
 }
-.skill--IT--content{
-    display: flex;
-    margin: 10px;
-    max-width: 200px;
-    overflow-wrap:break-word;
-    flex-direction: column;
-    color: white;
-}
-#skill--English--information-title{
-    display: block;
-    border-bottom: 3px solid rgb(255, 255, 255);
-    margin: 10px;
-    color: white;
-    font-size: 25px;
-}
-.skill--English--content{
+
+.skill__IT__content{
     display: flex;
     margin: 10px;
     max-width: 200px;
@@ -90,11 +84,25 @@ body {
     flex-direction: column;
     color: white;
 }
- 
 
+#skill__English__information-title{
+    display: block;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    margin: 10px;
+    color: white;
+    font-size: 25px;
+}
 
+.skill__English__content{
+    display: flex;
+    margin: 10px;
+    max-width: 200px;
+    overflow-wrap:break-word;
+    flex-direction: column;
+    color: white;
+}
 
-.Right-main{
+.right-main{
     display: inline-block;
     flex-direction: column;
     width: 100%;
@@ -103,72 +111,80 @@ body {
     border-radius: 0px;
 }
 
-#Name-and-jobs{
+#name-and-jobs{
     display: block;
     border: 0px solid black;
     padding-top: 45px;
     padding-left: 10px;
 }
-.Name-and-jobs--Fullname{
+
+.name-and-jobs__fullname{
     display: block;
     border: 0px solid black;
     font-size: 50px;
 }
-.Name-and-jobs--Jobs{
+
+.name-and-jobs__jobs{
     display: block;
     border: 0px solid black;
     font-size: 35px;
 }
 
-#Career-goals{
+#career-goals{
     display: block;
     border: 0px solid black;
     padding-left: 0px;
     margin-top: 30px;
 }
-#Career-goals--Information-title{
+
+#career-goals__information-title{
     display: block;
     border-bottom: 3px solid black;
     margin: 10px;
     font-size: 25px;
 }
-.Career-goals--Content{
+
+.career-goals__content{
     display: block;
     padding: 10px;
     font-size: 18px;
 }
 
-#Experience{
+#experience{
     display: block;
     border: 0px solid black;
     padding-left: 0px;
 }
-#Experience--Information-title{
+
+#experience__information-title{
     display: block;
     border-bottom: 3px solid black;
     margin: 10px;
     font-size: 25px;
 }
-.Experience--Content{
+
+.experience__content{
     display: block;
     padding: 10px;
     font-size: 18px;
 }
 
-#Other-skill{
+#other-skill{
     display: block;
     border: 0px solid black;
     padding: 0px;
     
 }
-#Other-skill--Information-title{
+
+#other-skill__information-title{
     display: block;
     border-bottom: 3px solid black;
     margin: 10px;
     font-size: 25px;
     background-color: rgb(255, 255, 255);
 }
-.Other-skill--Content{
+
+.other-skill__content{
     display: block;
     padding: 10px;
     font-size: 18px;
