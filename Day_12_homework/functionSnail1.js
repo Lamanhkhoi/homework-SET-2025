@@ -3,11 +3,11 @@ function snail(list){
     while(list.length){
         debugger;
         finalList.push(...list.shift());
-        for (var i=0 ; i < list.length; i++){
+        for (let i = 0 ; i < list.length; i++){
             finalList.push(list[i].pop());
         }
         finalList.push(...(list.pop() || []).reverse());
-        for (var i= list.length -1 ; i > 0 ; i-- ) {
+        for (let i = list.length -1 ; i > 0 ; i-- ) {
             finalList.push(list[i].shift());
         }
     
