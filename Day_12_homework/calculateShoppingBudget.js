@@ -1,6 +1,6 @@
 function calculateShoppingBudget(listNeedToBuy){
     let sum = 0;
-    for ( i=0 ; i < listNeedToBuy.length ; i = i+1){
+    for ( let i=0 ; i < listNeedToBuy.length ; i = i+1){
         let unit = listNeedToBuy[i][0];
         let price = listNeedToBuy[i][1];
         sum = unit * price + sum;
