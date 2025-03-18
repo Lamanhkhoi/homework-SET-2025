@@ -5,7 +5,7 @@ function snail(list){
     let left = 0;
     let right= list[0].length -1;
 
-    while ( top <= bottom && left<=right) {
+    while (top <= bottom && left<=right) {
         for (var i = left ; i <= right ; i++ ) {
             finalList.push(list[top][i]);
         }
