@@ -1,0 +1,49 @@
+.mainAccount{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+
+}
+
+.avatar{
+    display: flex;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    align-items: start;
+    
+}
+
+.deleteIcon::before{
+    display: flex;
+    border-radius: 45px;
+    border: 2px solid blue;
+    height: 18px;
+    width: 18px;
+    margin-top: 3px;
+    margin-left: 3px;
+    content: '×';
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nameAccount{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 2px solid green;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
