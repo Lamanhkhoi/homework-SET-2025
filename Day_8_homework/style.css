@@ -38,7 +38,8 @@ nav .bar-item {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-}  
+} 
+ 
 nav .bar-item:hover {
     background-color: green; 
 }
@@ -54,7 +55,6 @@ nav .bar-item:hover {
     border-radius: 5px;
 }
   
-
 .right-section {
     display: flex;
     justify-content: flex-end; 
