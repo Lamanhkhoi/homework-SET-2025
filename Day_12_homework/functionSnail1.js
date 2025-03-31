@@ -1,4 +1,4 @@
-function snail(list){
+function snail(list) {
     let finalList = [];
     while(list.length){
         debugger;
