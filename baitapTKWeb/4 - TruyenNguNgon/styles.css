@@ -1,0 +1,35 @@
+header{
+    border: 1px solid black;
+}
+
+#container1__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.container1{
+    display: flex;
+    
+}
+
+#container2__content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.container2{
+    display: flex;
+    margin-top: -50px;
+    flex-direction: row-reverse;
+}
+
+#container3Infomation{
+    display: flex;
+    flex-direction: row;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
