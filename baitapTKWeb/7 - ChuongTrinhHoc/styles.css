@@ -1,0 +1,6 @@
+body{
+    background-image: url(./hinh/nguyen-tac-trong-thiet-ke-do-hoa.jpg), url(./hinh/truong_day_thiet_ke_do_hoa.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-position: top, 15vh 50vh;
+}
+
