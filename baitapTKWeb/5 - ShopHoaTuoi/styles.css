@@ -55,7 +55,7 @@ header{
     display: block;
     background-image: url(./hinh/bullet-hoa-tim.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     width: 20px;
     height: 20px;
 
@@ -76,7 +76,7 @@ header{
     display: block;
     background-image: url(./hinh/bullet-tron-hong.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     width: 20px;
     height: 20px;
 
