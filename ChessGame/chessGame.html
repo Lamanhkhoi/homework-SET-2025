@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gameName">
+        <h1>Chess Game Time</h1>
+    </div>
+    <div class="scoreBoard">
+        <div class="scoreBoard__name scoreBoard__name--one">Player one</div>
+        <div class="scoreBoard__name scoreBoard__name--two">Player two</div>
+        <div class="scoreBoard__score">0</div>
+        <div class="scoreBoard__score">0</div>
+        <div class="scoreBoard__controls">
+            <button class="scoreBoard__controls--button">+</button>
+            <button class="scoreBoard__controls--button">-</button>
+        </div>
+        <div class="scoreBoard__controls">
+            <button class="scoreBoard__controls--button">+</button>
+            <button class="scoreBoard__controls--button">-</button>
+        </div>
+    </div>
+    <div class="mainChessGame">
+        <div class="chessBox">
+            <table id="chessBox--table">
+                <tbody>
+                    <tr class="locationRow">
+                        <th></th>
+                        <th>a</th>
+                        <th>b</th>
+                        <th>c</th>
+                        <th>d</th>
+                        <th>e</th>
+                        <th>f</th>
+                        <th>g</th>
+                        <th>h</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">8</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">8</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">7</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">7</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">6</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">6</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">5</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">5</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">4</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">3</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">3</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">2</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">2</th>
+                    </tr>
+                    <tr>
+                        <th class="locationRow">1</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <th class="locationRow">1</th>
+                    </tr>
+                    <tr class="locationRow">
+                        <th></th>
+                        <th>a</th>
+                        <th>b</th>
+                        <th>c</th>
+                        <th>d</th>
+                        <th>e</th>
+                        <th>f</th>
+                        <th>g</th>
+                        <th>h</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mainPlayer">
+            <div class="character">
+                <div id="characterAvatar">
+
+                </div>
+                <div class="characterInformation">
+                    <div id="characteInformation__Name">
+                        <h2>Name:</h2><h4>khoi</h4>
+                    </div>
+                    <div id="characterInformation__Age">
+                        <h2>Age:</h2><h4>19</h4>
+                    </div>  
+                </div>
+                <div id="characterCustomColor"></div>
+            </div>
+            <div class="time">
+
+            </div>
+            <div class="character">
+                <div id="characterAvatar">
+                    
+                </div>
+                <div class="characterInformation">
+                    <div id="characteInformation__Name">
+                        <h2>Name:</h2><h4>Liz</h4>
+                    </div>
+                    <div id="characterInformation__Age">
+                        <h2>Age:</h2><h4>19</h4>
+                    </div>  
+                </div>
+                <div id="characterCustomColor"></div>
+            </div>
+        </div>
+    </div>
+    <div class="settingControl">
+        <div id="play">
+            <button> play</button>
+        </div>
+        <div id="pause">
+            <button>pause</button>
+        </div>
+        <div id="undo">
+            <button>undo</button>
+        </div>
+        <div id="gameSetting">
+            <button>!</button>
+        </div>
+    </div>
+</body>
+</html>
