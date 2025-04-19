@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+actor Player as player
+package Audience {
+    actor Spectator as spectator
+
+}
+
+package chessGame {
+    usecase "Move" as move
+    usecase "Undo" as undo
+    usecase "Pause" as pause
+    usecase "Save" as save
+    usecase "Login" as login
+    usecase "Logout" as logout
+    usecase "Start" as start
+    usecase "Spectate" as spectate
+    usecase "Resign" as resign
+}
+
+player --> move
+player --> undo
+player --> save
+player --> pause
+player --> login
+player --> start
+player --> logout
+player --> resign
+
+spectator --> spectate
+
+rectangle chessGame{
+    (login) .> (logout) : include
+    (login) .> (start) : incude
+
+}
+
+@enduml
