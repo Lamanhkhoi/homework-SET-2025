@@ -24,7 +24,6 @@ const server = http.createServer(async (req, res) => {
   const pathName = parsedUrl.pathname;
   const method = req.method;
 
-  // CORS Headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');

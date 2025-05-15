@@ -3,7 +3,7 @@ import url from 'node:url';
 
 let sumApiCallCount = 0;
 
-const port = 3000;
+const port = 3001;
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true); 
@@ -19,35 +19,25 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
-
   if (pathName === '/sum-endpoint' && method === 'GET') {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end(`Đây là API tính tổng (Node.js thuần). Lần gọi thứ: ${sumApiCallCount}`);
-  } else if (pathName === '/calculate-sum-post' && method === 'POST') {
-
+    res.end(`API count: ${sumApiCallCount}`);
+  } else if (pathName === '/calculate-sum-post' && method === 'GET') {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-    const responseBody = {
-        message: 'Sum calculation (POST) successful (Node.js thuần)',
-        currentCallCount: sumApiCallCount
-    };
+    const responseBody = { message: 
+        'Sum calculation (POST) successful',
+        currentCallCount: sumApiCallCount};
     res.end(JSON.stringify(responseBody));
-  } else if (pathName === '/sum-api-calls' && method === 'GET') {
-
-    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-    const responseBody = { totalCalls: sumApiCallCount };
-    res.end(JSON.stringify(responseBody));
-  } else {
-
+    } else {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('404 Not Found - Không tìm thấy trang');
+    res.end('404 Not Found');
   }
 });
 
 server.listen(port, () => {
   console.log(`Server Node.js thuần đang chạy tại http://localhost:${port}`);
-  console.log('Để gọi API tính tổng (GET): GET http://localhost:3000/sum-endpoint');
-  console.log('Để gọi API tính tổng (POST): POST http://localhost:3000/calculate-sum-post (không cần body cho ví dụ này)');
-  console.log('Để lấy số lần gọi API tính tổng: GET http://localhost:3000/sum-api-calls');
+  console.log('Call API sum count (GET): GET http://localhost:3001/sum-endpoint');
+  console.log('call API sum count (GET): GET http://localhost:3001/calculate-sum-post');
 });

@@ -2,7 +2,7 @@
 import http from 'node:http';
 import url from 'node:url'; 
 
-const port = 3000;
+const port = 3002;
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
@@ -18,17 +18,37 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
-
-  if (pathName === '/current-time' && method === 'GET') {
+if (pathName === '/current-time' && method === 'GET') {
     const now = new Date();
-    const utcTimeString = now.toISOString().split('.')[0] + 'Z';
+    const timeZone = 'Asia/Ho_Chi_Minh';
 
+    const dateFormatter = new Intl.DateTimeFormat('en-CA', { 
+        timeZone: timeZone,
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    });
+
+    const timeFormatter = new Intl.DateTimeFormat('en-GB', { 
+        timeZone: timeZone,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    });
+
+    const datePart = dateFormatter.format(now); 
+    const timePart = timeFormatter.format(now); 
+
+    const vietnamTimeString = `${datePart}T${timePart} +07:00`;
+    
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-    const responseBody = { currentTime: utcTimeString };
-    res.end(JSON.stringify(responseBody));
+    console.log("Vietnam Time (Intl.DateTimeFormat):", vietnamTimeString);
+    res.end(JSON.stringify(vietnamTimeString));
+
   } else {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('404 Not Found - Endpoint không tồn tại');
+    res.end('404 Not Found - Endpoint');
   }
 });
 
