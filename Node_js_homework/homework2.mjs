@@ -19,10 +19,18 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 65fe112 (few fixing syntax homework 2)
   if (pathName === '/sum-endpoint' && method === 'GET') {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end(`API count: ${sumApiCallCount}`);
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 65fe112 (few fixing syntax homework 2)
   } else if (pathName === '/calculate-sum-post' && method === 'GET') {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
@@ -30,7 +38,12 @@ const server = http.createServer((req, res) => {
         'Sum calculation (POST) successful',
         currentCallCount: sumApiCallCount};
     res.end(JSON.stringify(responseBody));
+<<<<<<< HEAD
     } else {
+=======
+    
+  } else {
+>>>>>>> 65fe112 (few fixing syntax homework 2)
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('404 Not Found');
   }
