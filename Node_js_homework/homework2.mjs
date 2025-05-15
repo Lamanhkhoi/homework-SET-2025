@@ -23,6 +23,10 @@ const server = http.createServer((req, res) => {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end(`API count: ${sumApiCallCount}`);
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
   } else if (pathName === '/calculate-sum-post' && method === 'GET') {
     sumApiCallCount++;
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
@@ -30,7 +34,11 @@ const server = http.createServer((req, res) => {
         'Sum calculation (POST) successful',
         currentCallCount: sumApiCallCount};
     res.end(JSON.stringify(responseBody));
+<<<<<<< Updated upstream
     } else {
+=======
+  } else {
+>>>>>>> Stashed changes
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('404 Not Found');
   }
